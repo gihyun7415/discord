@@ -1,6 +1,7 @@
 from random import random
 
 import discord
+import os
 
 client=discord.Client()
 
@@ -126,5 +127,5 @@ async def on_message(message):
 
 
 
-
-client.run("Njk0MjkxOTI4ODIwMjE5OTU1.XoMYCQ.rh7SVIFwjMWLTwPzWqrnhEMRwxI")
+access_token = os.environ["BOT TOKEN']
+client.run(access_token)
